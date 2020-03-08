@@ -108,7 +108,7 @@ class denonTvDevice {
               if (result.root.device[0].deviceList[0].device) {
                 result.root.device[0].deviceList[0].device.forEach(function (device) {
                   if (device.firmwareRevision !== undefined) {
-                    me.firmwareRevision = device.firmwareRevision;
+                    me.firmwareRevision = device.firmwareRevision[0];
                     return;
                   }
                 });
