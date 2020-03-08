@@ -85,7 +85,7 @@ class denonTvDevice {
   getDeviceStatus() {
     const me = this;
 
-    request('http://' + me.host + ':60006/upnp/desc/aios_device/aios_device.xml', function (error, response) {
+    request('http://' + me.host + ':60006/upnp/desc/aios_device/aios_device.xml', function (error, response, data) {
       if (error) {
         me.log('Device: %s, name: %s, state: Offline', me.host, me.name);
         me.log.debug(error);
@@ -95,8 +95,8 @@ class denonTvDevice {
         me.connectionStatus = true;
 
         if (!me.hasSetInfo) {
-          response = response.replace(/:/g, '');
-          parseXMLString(response, function (error, result) {
+          data = data.replace(/:/g, '');
+          parseXMLString(data, function (error, result) {
             if (error) {
               me.log.debug('Device %s, getDeviceStatus parse string error: %s', me.host, error);
               return;
