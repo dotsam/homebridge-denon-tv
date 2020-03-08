@@ -1,5 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
+
+## 1.3.0
+- convert to be non-dynamic homebridge plugin that registers an internal accessory
+- use homebridge user dir for input json storage
+- code cleanup/formatting/linting
+
 ## 1.1.0 (3.02.2020)
 - code cleanup
 - performance improvements

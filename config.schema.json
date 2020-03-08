@@ -9,7 +9,7 @@
         "title": "Name",
         "type": "string",
         "default": "AV receiver",
-        "required": true,
+        "required": true
       },
       "devices": {
         "title": "Devices",

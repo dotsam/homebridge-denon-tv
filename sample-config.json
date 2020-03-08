@@ -1,26 +1,29 @@
 {
-    "platform": "DenonTv",
-    "devices": [{
+  "platform": "DenonTv",
+  "devices": [
+    {
       "name": "AV receiver",
       "host": "192.168.0.4",
       "port": 8080,
       "switchInfoMenu": true,
-    "inputs": [
+      "inputs": [
         {
-            "name": "Xbox One",
-            "reference": "GAME"
+          "name": "Xbox One",
+          "reference": "GAME"
         },
         {
-            "name": "Telewizor",
-            "reference": "TV"
+          "name": "Telewizor",
+          "reference": "TV"
         },
         {
-            "name": "Tuner Sat",
-            "reference": "SAT/CBL"
+          "name": "Tuner Sat",
+          "reference": "SAT/CBL"
         },
         {
-            "name": "CD",
-            "references": "CD"
+          "name": "CD",
+          "references": "CD"
         }
-    ]
+      ]
+    }
+  ]
 }
